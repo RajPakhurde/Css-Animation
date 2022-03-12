@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title-wrapper {
+    background-color: blueviolet;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.title-wrapper:hover{
+    color: #1f93ff;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border: 5px solid blue;
+    font-size: 2rem;
+
+}
+.menu-item{
+    padding: 2rem;
+    transition: all 1s ease-out;
+}
+.menu-item:hover{
+    font-size: 2.5em;
+    color: #1f93ff;
+}
+body{
+    background-color: greenyellow;
+}
