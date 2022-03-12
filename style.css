@@ -32,3 +32,23 @@
 body{
     background-color: greenyellow;
 }
+.box{
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border: 1px solid black;
+    animation-name: supersize ;
+    animation-duration: 2s ;
+    animation-timing-function: ease-out;
+    animation-delay: 0s ;
+    animation-iteration-count: 4;
+    animation-direction:  alternate;
+    animation-fill-mode: both;
+
+
+}
+ @keyframes supersize{
+     0%{width: 10px; height: 10px; background: blue;}
+     50%{width: 20px; height: 20px; background: red;}
+     100%{width: 50px ; height: 50px; background: green ;}
+ }
