@@ -1,3 +1,9 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .box{
     top: 50%;
     left: 50%;
@@ -43,4 +49,55 @@
 @keyframes transform {
     100% { transform:  scalex(2) translateX(50px) rotate(45deg);}
     
+}
+ 
+
+.box1 {
+   background-color: red;
+   width: 20px;
+   height:20px;
+   animation-name: challange ;
+   animation-fill-mode: both;
+   animation-iteration-count: 1;
+   animation-duration: 3s ;
+   animation-timing-function: ease-in-out;
+   animation-delay: 1s;
+   
+}
+.box2 {
+    background-color: purple;
+    width: 20px;
+    height:20px;
+    animation-name: challange ;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 3s ;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.box3 {
+    background-color: lightgreen;
+    width: 20px;
+    height:20px;
+    animation-name: challange ;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 3s ;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.box4 {
+    background-color: yellow;
+    width: 20px;
+    height:20px;
+    animation-name: challange ;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 3s ;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes challange {
+    100% { transform:translate(50vw , 50vh) scalex(10) skew(60deg);}
 }
