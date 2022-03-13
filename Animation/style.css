@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title-wrapper {
+    background-color: blueviolet;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.title-wrapper:hover{
+    color: #1f93ff;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border: 5px solid blue;
+    font-size: 2rem;
+
+}
+.menu-item{
+    padding: 2rem;
+    transition: all 1s ease-out;
+}
+.menu-item:hover{
+    font-size: 2.5em;
+    color: #1f93ff;
+}
+.text{
+   background-image: url(background\ image.jpg);
+   background-size: cover; 
+   width: 100vw;
+   height: 100vh;
+   animation-name: growingimage;
+   animation-duration: 1s;  
+   animation-timing-function: ease-out;
+   animation-fill-mode: both;
+}
+@keyframes growingimage{
+    from{opacity: 0%; width: 0%;}
+    to{opacity: 100%; width: 100%;}
+}
+.box{
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border: 1px solid black;
+    animation-name: supersize ;
+    animation-duration: 2s ;
+    animation-timing-function: ease-out;
+    animation-delay: 0s ;
+    animation-iteration-count: 4;
+    animation-direction:  alternate;
+    animation-fill-mode: both;
+
+
+}
+ @keyframes supersize{
+     0%{width: 10px; height: 10px; background: blue;}
+     50%{width: 20px; height: 20px; background: red;}
+     100%{width: 50px ; height: 50px; background: green ;}
+ }
+ .mainline{
+     display: flex;
+     justify-content: center;
+     position: relative;
+     top: 50%;
+     animation-name: mainline;
+     animation-duration: 2s;
+     animation-fill-mode: both;
+     animation-timing-function: ease-out;
+     animation-delay: 2s;
+ }
+
+ @keyframes  mainline{
+     from {opacity: 0%;}
+     to {opacity: 100%;}
+ }
